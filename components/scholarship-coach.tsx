@@ -7,10 +7,12 @@ import { Button } from "@/components/ui/button"
 
 export default function ScholarshipCoach() {
   // Use the images from our public folder
-  const images = [
-    "/images/hero-slide.png",
-    // Add more slides as needed
-    "/placeholder.svg?height=1000&width=1000", // Fallback image
+  const images = [ // Here Add any images for the slideshow of the hero section 
+    "/assets/slide 2.jpg",
+    "/assets/slide 3.jpg",
+    "/assets/slide 4.jpg",
+    "/assets/slide 5.jpg",
+    "/assets/world.jpg",
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -39,7 +41,7 @@ export default function ScholarshipCoach() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <GraduationCap className="h-8 w-8 text-blue-500" />
+                <Image src="/assets/logo.png" alt="Logo" width={32} height={32} />  {/* you can update logo here*/}
                 <span className="text-2xl font-bold text-gray-900 ml-2">The</span>
                 <span className="text-2xl font-bold text-blue-500 ml-2">ScholarshipCoach</span>
               </div>
@@ -69,10 +71,17 @@ export default function ScholarshipCoach() {
                   Expert guidance for USA scholarships to make your US dream Reality.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow">
-                    <Button size="lg" className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                      Free Consultation
-                    </Button>
+                  <div className="rounded-md shadow flex flex-row gap-4">
+                    <a href="https://calendly.com/saqibmahmood194" target="_blank" rel="noopener noreferrer">  {/* link to 1 on 1 consultation */}
+                      <Button size="lg" className="w-full bg-blue-500 hover:bg-blue-600 text-white">
+                        Book 1 on 1 Call
+                      </Button>
+                    </a>
+                    <a href="wa.me/12675069530" target="_blank" rel="noopener noreferrer">  {/* update this link as needed for whatsapp/ full process */}
+                      <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
+                        Whatsapp Now! 
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -92,7 +101,8 @@ export default function ScholarshipCoach() {
                 <Image
                   src={src || "/placeholder.svg"}
                   alt={`Scholarship opportunity ${index + 1}`}
-                  fill
+                  width={1080}
+                  height={720}
                   className="object-cover"
                   priority={index === 0}
                 />
@@ -127,7 +137,7 @@ export default function ScholarshipCoach() {
           </h2>
           <div className="relative w-full h-[400px] bg-gray-100 rounded-lg overflow-hidden">
             <Image
-              src="/images/world-map.png"
+              src="/assets/world.jpg"
               alt="World map showing university destinations"
               fill
               className="object-contain"
@@ -225,27 +235,22 @@ export default function ScholarshipCoach() {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <Instagram className="h-6 w-6 text-blue-500" />
-                <span className="text-gray-700 font-medium">@TheScholarshipCoach</span>
+                <span className="text-gray-700 font-medium">Usascholarshipcoach</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="h-6 w-6 text-blue-500" />
-                <span className="text-gray-700 font-medium">hello@thescholarshipcoach.com</span>
+                <span className="text-gray-700 font-medium">Contact@usascholarshipcoach.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="h-6 w-6 text-blue-500" />
-                <span className="text-gray-700 font-medium">+1 (872) 310-7200</span>
+                <span className="text-gray-700 font-medium">+12675069530</span>
               </div>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-gray-900">Main Office</h3>
               <p className="text-gray-700">
-                456 Education Avenue
-                <br />
-                Suite 789
-                <br />
-                Boston, MA 02108
-                <br />
-                United States
+                P-152 1st Floor Javed Munzil Opposit AG Office<br />
+                Circular Road Faisalabad
               </p>
             </div>
           </div>
