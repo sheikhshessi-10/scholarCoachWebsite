@@ -77,7 +77,7 @@ export default function ScholarshipCoach() {
                         Book 1 on 1 Call
                       </Button>
                     </a>
-                    <a href="wa.me/12675069530" target="_blank" rel="noopener noreferrer">  {/* update this link as needed for whatsapp/ full process */}
+                    <a href="https://wa.me/12675069530" target="_blank" rel="noopener noreferrer">  {/* update this link as needed for whatsapp/ full process */}
                       <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
                         Whatsapp Now! 
                       </Button>
